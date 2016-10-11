@@ -6,6 +6,7 @@ development:
   username:
   password:
 
+
 test: &TEST
   adapter: postgresql
   encoding: utf8
@@ -14,6 +15,7 @@ test: &TEST
   username:
   password:
 
+
 production:
   adapter: postgresql
   encoding: utf8
@@ -21,6 +23,7 @@ production:
   pool: 5
   username:
   password:
+
 
 cucumber:
   <<: *TEST
