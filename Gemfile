@@ -12,6 +12,9 @@ gem 'devise'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk'
 
+
+gem 'omniauth-facebook'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

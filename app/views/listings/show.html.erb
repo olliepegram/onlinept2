@@ -9,7 +9,7 @@
       <div class="panel-body">
         <h3><%= @listing.name %></h3>
         <p><%= number_to_currency(@listing.price) %></p>
-        <p><%= @listing.description %></p>
+        <%= image_tag current_user.avatar %>
       </div>
     </div>
   </div>
