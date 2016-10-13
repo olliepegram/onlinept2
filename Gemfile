@@ -9,6 +9,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'devise'
 
+gem 'growlyflash'
+
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk'
 
