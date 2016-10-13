@@ -1,4 +1,9 @@
 class User < ApplicationRecord
+  validates :first_name, :email, :password, presence: true
+
+  #depends on the existence of the user. If user is deleted so will listing.
+  has_many :listings, dependent: :destroy
+
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable
     devise :database_authenticatable, :registerable,
