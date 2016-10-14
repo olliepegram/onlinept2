@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   #depends on the existence of the user. If user is deleted so will listing.
   has_many :listings, dependent: :destroy
+  has_many :sales, class_name: "Order", foreign_key: "seller_id"
+  has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
 
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable

@@ -4,6 +4,7 @@ class Listing < ApplicationRecord
   validates :image, attachment_presence: true
 
   belongs_to :user
+  has_many :orders
   # delegate :first_name, to: :user, allow_nil: true, prefix: true
   # delegate :email, to: :user, allow_nil: true, prefix: true
   # delegate :avatar, to: :user, allow_nil: true, prefix: true
