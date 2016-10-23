@@ -14,11 +14,13 @@ gem 'growlyflash'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk'
 
+gem 'rails_admin', '~> 1.0'
 
 gem 'omniauth-facebook'
 
 gem 'stripe'
 gem "figaro"
+gem 'acts_as_commentable'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
