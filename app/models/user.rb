@@ -6,18 +6,6 @@ class User < ApplicationRecord
   has_many :sales, class_name: "Order", foreign_key: "seller_id"
   has_many :purchases, class_name: "Order", foreign_key: "buyer_id"
 
-  # after_create :create_a_customer
-  #
-  #       def create_a_customer
-  #        token = self.stripe_card_token
-  #
-  #        customer = Stripe::Customer.create(
-  #        :card => token,  
-  #        :plan => 120,
-  #        :email => self.email
-  #    )
-  #       end
-
 
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable and :omniauthable
