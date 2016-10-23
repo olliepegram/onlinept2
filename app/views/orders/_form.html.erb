@@ -1,3 +1,5 @@
+<%= javascript_include_tag 'payment' %>
+
 <div class="row">
     <div class="col-md-4">
         <div class="thumbnail">
@@ -8,7 +10,7 @@
     </div>
     <div class="col-md-8">
 
-        <%= form_for([@listing,@order]) do |f| %>
+        <%= form_for([@listing,@order], :html=> {:id => 'payment-form'}) do |f| %>
         <% if order.errors.any? %>
         <div id="error_explanation">
             <h2><%= pluralize(order.errors.count, "error") %>
@@ -53,7 +55,7 @@
         </div>
 
         <div class="actions">
-            <%= f.submit "Complete Order", class: "btn btn-primary" %>
+            <%= f.submit "Complete Order", class: "submit btn btn-primary" %>
         </div>
         <% end %>
     </div>
