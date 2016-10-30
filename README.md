@@ -13,10 +13,10 @@
   + Stripe
   + Figaro
   + Acts_as_commentable
- '''
- bundle
- rake db:migrate
- '''
+'''
+bundle
+rake db:migrate
+'''
 
 ## Design Documentation
   By Ollie Pegram
