@@ -1,4 +1,24 @@
-# Design Documentation
+# TrainMe - Project 2
+[Site link](https://thawing-hamlet-27349.herokuapp.com/) 
+## Application set-up
+  + Ruby 2.3.1 and Rails 5.0
+  + Gems used:
+  + Bootstrap
+  + Devise
+  + Growlyflash
+  + Paperclip
+  + aws-sdk
+  + rails_admin
+  + omniauth-facebook
+  + Stripe
+  + Figaro
+  + Acts_as_commentable
+ '''
+ bundle
+ rake db:migrate
+ '''
+
+## Design Documentation
   By Ollie Pegram
 ##Problem
   Online Personal Training (OPT) has become increasingly popular over the last couple of years, but to find an online personal    trainer you have to know their direct name, and even if you do know the trainers name and end up find their website, they     might not be the right PT for you. If the person does become a client of the trainer then they are likely to have all         communication through only email. As well as this most PT sites don’t have any rating/review type systems in place which        could lead to the client not knowing what they are getting in to.
